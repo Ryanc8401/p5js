@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+      function setup() {
+  createCanvas(800, 800);
+}
+
+function draw() {
+  background("#BEFFBA");
+  
+  
+  stroke("Black")
+  strokeWeight(5)// How Thick is the outline of the piggy
+  fill("Pink")//Color Of Left Leg
+  rect(304,290,50,160)//Left Leg
+  fill("Pink")//Color Of Right Leg
+  rect(444,290,50,160)//Right Leg
+  
+  fill("Pink")
+  arc(330,140,80,80,0, PI + QUARTER_PI, CHORD);//Left Ear
+  arc(490,150,80,80,0, PI + QUARTER_PI, CHORD);//Right Ear
+ 
+  fill("Pink")//Color of body
+  ellipse(400,330,200,250)//Body
+  
+  fill("Pink")//Color of head
+  ellipse(400,200,200,200)//Head
+  
+  fill("Pink")//Color of nose
+  ellipse(400,250,100,50)//Nose
+	
+  fill("White")//Color of left eye
+ 	ellipse(350,170,30,30)//Left Eye
+  fill("Black")
+  arc(350,170,25,25,0, PI + QUARTER_PI, CHORD);//Left Eye Pupil
+  
+  
+  fill("White")//color of right eye
+  ellipse(440,170,30,30)//Right Eye
+  fill("Black")
+  arc(440,170,25,25,0, PI + QUARTER_PI, CHORD);//Right Eye Pupil
+  
+  
+  fill("Black")
+ 
+  strokeWeight(8)// How big are the nose
+  point(380,250)//Left Nostril
+  fill("Black")
+  point(420,250)//Right Nostril
+  
+  strokeWeight(2)
+  textSize(32)
+  text(" OINK I'M PIGGY",290,70)//Text
+  
+  strokeWeight(7)
+  line(305,310,495,310)//Line
+  stroke(255,241,154,120)//Collar Color
+  fill("White")
+  ellipse(400,310,30,30)//Collar
+  
+  strokeWeight(1)
+  fill("#FFDBEF")//Color of blushes
+  ellipse(330,210,20,10)//blushes
+  ellipse(470,210,20,10)//blushes
+
+          
+ 
+}
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/Ryanc8401/p5js/blob/master/ZoogPiggy.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
