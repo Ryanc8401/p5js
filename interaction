@@ -5,7 +5,7 @@
     <title>p5js Template</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
     <script>
-     function setup() {
+      function setup() {
   createCanvas(600, 600);
   //pizza
   fill(210,105,30)
